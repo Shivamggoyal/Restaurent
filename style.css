@@ -1,0 +1,304 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html , body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    box-shadow: 5px 5px 5px rgb(1 1 1 / 5%);
+    padding-bottom: 11px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 199;
+}
+
+.nav_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav_container .logo {
+    margin: 11px 0px;
+}
+
+.nav_container .iconBar {
+    font-size: 36px;
+}
+
+.feature {
+    margin: 100px 0 22px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 32px auto;
+}
+
+.container .hero {
+    display: grid;
+    align-content: center;
+    gap: 100px;
+    grid-template-columns: repeat(auto-fit , minmax(250px , 1fr));
+
+}
+
+.hero_img {
+    width: 70%;
+    margin: auto;
+}
+
+.container .hero_img img {
+    width: 100%;
+}
+
+.hero_content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-self: center;
+}
+
+.hero_content .offer {
+    background: #45db45;
+    color: white;
+    align-self: flex-start;
+    padding: 11px 19px;
+}
+
+.hero_content h1 {
+    align-self: flex-start;
+    font-size: 44px;
+    font-family: monospace;
+}
+
+.hero_content p {
+    align-self: flex-start;
+    font-size: 19px;
+}
+
+.hero_content button {
+    align-self: flex-start;
+    font-size: 17px;
+    padding: 10px;
+    background-color: #ffc066;
+    border: navajowhite;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.hero_content button:hover {
+    /* transform: scale(1.03); */
+    background-color: #fcb046;
+}
+
+.card_container {
+    display: flex;
+    row-gap: 0px;
+    column-gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gridItem {
+    width: 277px;
+    margin: 0 5px;
+
+}
+
+.card {
+    display: flex;
+    padding: 21px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    width: 100%;
+}
+
+.cardContent {
+    padding: 4px 19px;
+
+}
+
+.card:hover {
+    box-shadow: 4px 4px 5px rgb(1 1 1 / 5%);
+    transform: scale(1.03);
+}
+
+.devider {
+    border: 1px solid #ccc;
+    margin: 90px 20px;
+}
+
+.image_container {
+    margin: 0 21px;
+    display: grid;
+    gap: 40px;
+}
+
+.image_container h1 {
+    text-align: center;
+    font-size: 43px;
+    font-family: sans-serif;
+
+}
+
+.images {
+    display: grid;
+    grid-template-areas: "I1 I1 I2 I3"
+        "I1 I1 I2 I7"
+        "I4 I5 I6 I7";
+    gap: 15px;
+}
+
+.img1 {
+    grid-area: I1;
+}
+
+.img2 {
+    grid-area: I2;
+}
+
+.img3 {
+    grid-area: I3;
+}
+
+.img4 {
+    grid-area: I4;
+}
+
+.img5 {
+    grid-area: I5;
+}
+
+.img6 {
+    grid-area: I6;
+}
+
+.img7 {
+    grid-area: I7;
+}
+
+.grid_image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.grid_image:hover {
+    transform: scale(1.04);
+
+}
+
+footer {
+    background-color: #fff0db;
+    margin: 60px 0 0 0;
+    padding: 30px 0px;
+
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px 0;
+    row-gap: 29px;
+    flex-wrap: wrap;
+    column-gap: 20px;
+}
+
+.footer .logo {
+    width: 248px;
+}
+
+.footer .logo img {
+    width: 100%;
+}
+
+.footerContent {
+    display: flex;
+    gap: 33px;
+    justify-content: space-evenly;
+    width: 78%;
+}
+
+.main_link {
+    width: 24%;
+}
+
+.footer h4 {
+    color: gray;
+    font-size: 20px;
+    margin: 0 0 15px;
+    font-weight: 100;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+li {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.reach {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+.reach h4 {
+    margin: 0;
+}
+
+.reach input {
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 6px 1px 6px 5px;
+    border: none;
+}
+
+.reach h3 {
+    font-size: 23px;
+}
+
+.follow_icons {
+    font-size: 21px;
+}
+
+.follow_icons i {
+    margin: 0 8px 0 0;
+    transition: 0.1s ease-out;
+    cursor: pointer;
+}
+.follow_icons i:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width : 600px) {
+    .container .hero {
+        gap: 10px;
+    }
+
+    .hero_content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero_content .offer {
+        align-self: auto;
+        width: 70%;
+    }
+
+    .hero_content button {
+        align-self: auto;
+    }
+}
